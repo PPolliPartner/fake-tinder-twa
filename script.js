@@ -48,6 +48,8 @@ allCards.forEach(function (el) {
     var moveOutWidth = document.body.clientWidth;
     var keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
 
+    var love = event.velocityX >= 0
+
     event.target.classList.toggle('removed', !keep);
 
     if (keep) {
@@ -99,10 +101,12 @@ function createButtonListener(love) {
 }
 
 function onLove() {
+  console.log("love");
   window.Telegram.WebApp.showAlert("Love!");
 }
 
 function onNope() {
+  console.log("nope");
   window.Telegram.WebApp.showAlert("No love(");
 }
 
