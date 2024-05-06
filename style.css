@@ -137,9 +137,9 @@ p {
 }
 
 .fa-heart {
-  color: var(--tg-theme-link-color, red);
+  color: crimson;
 }
 
 .fa-remove {
-  color: var(--tg-theme-destructive-text-color, blue);
+  color: var(--tg-theme-button-text-color, blue);
 }
