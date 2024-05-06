@@ -10,6 +10,10 @@ body {
   font-family: sans-serif;
 }
 
+p {
+  color: var(--tg-theme-hint-color);
+}
+
 .tinder {
   width: 100vw;
   height: 100vh;
