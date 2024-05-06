@@ -10,10 +10,6 @@ body {
   font-family: sans-serif;
 }
 
-p {
-  color: var(--tg-theme-hint-color, gray);
-}
-
 .tinder {
   width: 100vw;
   height: 100vh;
@@ -62,7 +58,7 @@ p {
 .tinder--cards {
   flex-grow: 1;
   padding-top: 40px;
-  text-align: center;
+  text-align: justify;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -98,17 +94,18 @@ p {
 }
 
 .tinder--card h3 {
-  margin-top: 32px;
-  font-size: 32px;
+  margin-top: 2vh;
+  font-size: 4vh;
   padding: 0 16px;
   pointer-events: none;
 }
 
 .tinder--card p {
-  margin-top: 24px;
-  font-size: 20px;
+  margin-top: 1vh;
+  font-size: 2vh;
   padding: 0 16px;
   pointer-events: none;
+  color: var(--tg-theme-hint-color, gray);
 }
 
 .tinder--buttons {
@@ -118,11 +115,11 @@ p {
 }
 
 .tinder--buttons button {
-  border-radius: 50%;
+  border-radius: 15%;
   line-height: 60px;
   width: 60px;
   border: 0;
-  background: var(--tg-theme-button-color, lightblue);
+  background: var(--tg-theme-button-color, lightgray);
   display: inline-block;
   margin: 0 8px;
 }
@@ -141,5 +138,5 @@ p {
 }
 
 .fa-remove {
-  color: var(--tg-theme-button-text-color, blue);
+  color: var(--tg-theme-button-text-color, dimgray);
 }
