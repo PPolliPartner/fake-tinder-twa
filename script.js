@@ -62,6 +62,12 @@ allCards.forEach(function (el) {
       var rotate = xMulti * yMulti;
 
       event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
+
+      if (love) {
+        onLove();
+      } else {
+        onNope();
+      }
       initCards();
     }
   });
@@ -80,16 +86,24 @@ function createButtonListener(love) {
 
     if (love) {
       card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
-      window.Telegram.WebApp.showAlert("Love!");
+      onLove();
     } else {
       card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
-      window.Telegram.WebApp.showAlert("No love(");
+      onNope();
     }
 
     initCards();
 
     event.preventDefault();
   };
+}
+
+function onLove() {
+  window.Telegram.WebApp.showAlert("Love!");
+}
+
+function onNope() {
+  window.Telegram.WebApp.showAlert("No love(");
 }
 
 var nopeListener = createButtonListener(false);
