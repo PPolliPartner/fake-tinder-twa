@@ -132,9 +132,9 @@ body {
 }
 
 .fa-heart {
-  color: var(--tg-theme-accent-text-color);
+  color: var(--tg-theme-button-text-color);
 }
 
 .fa-remove {
-  color: var(--tg-theme-accent-text-color);
+  color: var(--tg-theme-button-text-color);
 }
