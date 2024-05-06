@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>CodePen - Tinder swipe cards</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
-
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -50,6 +50,9 @@
 </div>
 <!-- partial -->
   <script src='https://hammerjs.github.io/dist/hammer.min.js'></script><script  src="./script.js"></script>
-
+  <script>
+    window.Telegram.WebApp.expand();
+    window.Telegram.WebApp.showAlert("Hello");
+  </script>
 </body>
 </html>
